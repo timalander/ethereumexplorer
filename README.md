@@ -26,6 +26,9 @@ $ yarn run dev // starts the local node server, running at localhost:8080
 
 
 ### Client Routes
+
 `/` => Index page listing all address info
+
 `/address/:address` => Address page listing address specific info
+
 `/add` => Form for submitting new Ethereum addresses to the system
