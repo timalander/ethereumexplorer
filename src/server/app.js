@@ -24,12 +24,8 @@ app.get('/*', function(req, res) {
 
 // Logging and exception handling
 app.use((err, req, res, next) => {
-    logger.error(err);
-
-    if (err.code === 11000) {
-        res.status(409).send({
-            response: err.message
-        });
+    if (err) {
+        logger.error(err);
     }
 
     next(err);
